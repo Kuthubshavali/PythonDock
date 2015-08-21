@@ -1,6 +1,6 @@
 FROM ubuntu:14.04 
 MAINTAINER Mr.Mohammed Syed 
-RUN sudo apt-get updates
+RUN sudo apt-get update
 RUN sudo apt-get -y install python3.4
 RUN sudo apt-get -y install python-pip
 RUN sudo pip install Flask-0.10.1
