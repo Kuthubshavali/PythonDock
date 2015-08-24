@@ -20,7 +20,7 @@ list3=rows[2]
            
 @app.route('/')
 def showUI():
-    
+    print("here are the details")
     return render_template('s.html')
 
 @app.route('/final')
