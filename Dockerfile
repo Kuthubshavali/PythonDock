@@ -7,6 +7,7 @@ RUN sudo pip install MySQL-python
 RUN mysql -u root -e  SET PASSWORD = PASSWORD('root@123')
 RUN mysql -u localhost -e  SET PASSWORD = PASSWORD('root@123')
 RUN sudo service  mysql restart
+EXPOSE 80
 RUN sudo apt-get install -y python3.4
 RUN sudo apt-get install -y python-pip
 RUN sudo apt-get install -y git
@@ -16,6 +17,6 @@ RUN echo $PATH
 RUN export PATH=/usr/local/PythonWebApp/:$PATH 
 RUN git clone https://github.com/Kuthubshavali/PythonDock.git
 RUN cp -r PythonDock /usr/local/PythonWebApp/
-EXPOSE 80
 WORKDIR /usr/local/PythonWebApp/PythonDock/
+
 
