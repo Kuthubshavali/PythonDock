@@ -8,10 +8,7 @@ RUN sudo apt-get install -y python-pip
 RUN sudo pip install MySQL-python
 RUN sudo apt-get install -y git
 RUN sudo pip install Flask==0.10.1
-RUN echo $PATH
 RUN git clone https://github.com/Kuthubshavali/PythonDock.git
 RUN mv -r PythonDock /usr/local/
 WORKDIR /usr/local/PythonWebApp/
-EXPOSE 80
-
-
+EXPOSE 5000
